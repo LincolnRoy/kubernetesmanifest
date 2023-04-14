@@ -6,7 +6,7 @@ metadata:
     app: flaskdemo
   name: flaskdemo
 spec:
-  replicas: 5
+  replicas: 3
   selector:
     matchLabels:
       app: flaskdemo
@@ -18,7 +18,7 @@ spec:
         app: flaskdemo
     spec:
       containers:
-      - image: rootroy/test:5
+      - image: rootroy/test:latest
         name: flaskdemo
         resources: {}
 status: {}
